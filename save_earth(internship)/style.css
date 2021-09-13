@@ -1,0 +1,137 @@
+header>div{
+    display: flex;
+    align-content: center;
+    justify-content:center;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+#logo{
+    padding-top: 3px;
+    height: 10vh;
+    padding-right: 2%;
+}
+
+header>div>h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-around;
+    background-color: rgba(17, 121, 224, 0.5);
+    border-radius: 5px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+body{
+    margin-top: 0px;
+    height: 200vh;
+}
+nav>a{
+    text-decoration: none;
+    font-size: 3vh;
+    color: rgba(0,0,0,1);
+}
+
+#backgrnd{
+    position: absolute;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 99%;
+    background-position: center;
+    background-attachment: fixed;
+    transition: 5s;
+
+/*     animation-name:background_change ;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards ;
+    animation-iteration-count:infinite ;
+    animation-play-state:running ;
+    animation-timing-function: ease-in-out; */
+
+}
+/* @keyframes background_change {
+    25%{
+        background-image: url(bg1.jpg);
+    }
+    50%{
+        background-image: url(bg2.jpg);
+    }
+    75%{
+        background-image: url(bg3.jpg);
+    }
+} */
+#main{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.mycard{
+    display: flex;
+    flex-direction: column;
+    height:max-content;
+    width: 50%;
+    padding-bottom: 10px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    align-items: center;
+    backdrop-filter: blur(5px);
+
+}
+.mycard>p{
+    text-align: center;
+    font-size: 3vh;
+    padding: 10px 10px 10px 10px;
+    font-family:cursive;
+}
+.mycard>h1{
+    text-align: center;
+}
+.mycard>a{
+    text-decoration: none;
+    font-size: 3vh;
+    padding:5px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    color: rgb(16, 17, 17);
+}
+.mycard>a:hover{
+    background-color: rgba(0,0,255,1);
+}
+.active{
+    background-color: rgb(224, 228, 18);
+    border-radius: 5px;
+    padding: 1%;
+}
+#info{
+    display: block;
+    position: relative;
+    top:100vh;
+    background-color: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+#info>p{
+    font-size: 2rem;
+}
+@media screen and (max-width: 480px) {
+    .mycard {
+      width: 90%;
+    }
+    #info>p{
+        font-size: 20px;
+    }
+  }
